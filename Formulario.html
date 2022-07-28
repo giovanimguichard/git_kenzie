@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Kenzie</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required/>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Digite seu email" name="email" id="email" required/>
+        </div>
+        <div>
+            <label for="motivacao">Digite o que te motivou para participar deste evento: </label>
+            
+        </div>
+        <div>
+            <textarea name="motivacao" id="motivacao" cols="30" rows="10" placeholder="Descreva sua motivação aqui! (opcional)"></textarea>
+        </div>
+
+        <div>
+            <label for="select-modulo">Selecione o módulo em que você está</label>
+            <select name="modulo" id="select-modulo" required>
+                <option value="">Selecione aqui</option>
+                <option value="m1">Módulo 1</option>
+                <option value="m2">Módulo 2</option>
+                <option value="m3">Módulo 3</option>
+                <option value="m4">Módulo 4</option>
+                <option value="m5">Módulo 5</option>
+                <option value="m6">Módulo 6</option>
+            </select>
+        </div>
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <div>
+            <p>Deseja receber novidades da Kenzie por email?</p>
+            <label for="sim">Sim</label>
+            <input type="radio" name="resposta" id="sim" value="sim">
+            <label for="nao">Não</label>
+            <input type="radio" name="resposta" id="nao" value="nao">
+        </div>
+       <button type="submit">Enviar</button>
+        
+    </form>
+</body>
+</html>
